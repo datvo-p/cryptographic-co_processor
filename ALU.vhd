@@ -42,16 +42,5 @@ AAAA<='0'&A(15 downto 0);
 BBBB<='0'&B(15 downto 0);
 
     with Sel select
-        Result <= AAAA when "0000",
-                  not (AAAA) when "0001",
-                  AAAA and BBBB when "0010",
-                 (AAAA) nand BBBB when "0011",
-                  AAAA or BBBB when "0100",
-                  not ((AAAA) or (BBBB)) when "0101",
-                 (A Xor B) when "0110",
-                  not (A Xor B) when "0111",
-                  AAAA + BBBB when "1000",
-                  AAAA-BBBB when "1001",
-                  "0000000000000000" when others;
-                  
+
 end Behavioral;
