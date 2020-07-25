@@ -1,23 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 07/13/2020 06:04:55 PM
--- Design Name: 
--- Module Name: Multilexer - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -48,6 +28,6 @@ begin
             B(15 downto 0) when S = "1000" else
             B(15 downto 0) when S = "1001" else
             B(15 downto 0) when S ="1010" else
-            C(7 downto 0);
+            C(15 downto 0);
 
 end Behavioral;
